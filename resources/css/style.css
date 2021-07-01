@@ -1,0 +1,159 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html, 
+body {
+	background-color: #fff;
+	color: #000;
+	text-rendering: optimizeLegibility;
+	font-size: 16px;
+	font-family: 'Work Sans', 'Arial', sans-serif;
+	font-weight: 300;
+}
+
+.row {
+	max-width:1140px;
+	margin:0 auto;
+}
+
+header {
+	background-image: linear-gradient(rgba(0,0,0,.3),rgba(0,0,0,.7)),url(img/header-img.jpg);
+	height: 100vh;
+	background-size: cover;
+	background-position: center;
+	/*parent element set to relative*/
+	position: relative;
+}
+
+.header-box {
+	/*Whenever this child element is set to absolute, the position must be set to relative*/
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	/*first number for horizontal, second number for vertical*/
+	transform: translate(-50%,-50%);
+	text-align: center;
+}
+
+h1 {
+	font-size: 500%;
+	color: #fff;
+	font-weight: 400;
+	margin-bottom: 20px;
+}
+
+h2 {
+	font-size: 200%;
+	color: #fff;
+	font-weight: 400;
+}
+
+.header-text-box {
+	margin-bottom: 100px;
+}
+
+/* BUTTONS */
+
+
+/*pseudo-class is a keyword added to a selector that specifies a special state of the element*/
+.btn:link,
+.btn:visited {
+	text-decoration: none;
+	padding: 10px 30px;
+	border-radius: 200px;
+}
+
+.btn-full:link,
+.btn-full:visited {
+	background-color: #ed07b7;
+	color: #fff;
+}
+
+/*active is when it's being clicked at the moment*/
+.btn-full:hover,
+.btn-full:active {
+	background-color: #bd0592;
+}
+
+.btn-ghost:link,
+.btn-ghost:visited {
+	border: 2px solid #ed07b7;
+	color: #ed07b7;
+}
+/*when cursor is over it*/
+.btn-ghost:hover,
+.btn-ghost:active {
+	background-color: #ed07b7;
+	color: #fff;
+
+}
+
+/*navigation buttons on top of screen*/
+
+.main-nav {
+	list-style: none;
+	float: right;
+	margin-top: 50px;
+}
+
+/*Every list element under nav class*/
+
+.main-nav li {
+	display: inline-block;
+	margin-right: 40px;
+	text-transform: uppercase;
+}
+
+/*changes anchor elements inside of list elements*/
+
+.main-nav li a:link,
+.main-nav li a:visited {
+	text-decoration: none;
+	color: #fff;
+	transition: border-bottom 0.2s;
+}
+
+/*hover effect*/
+.main-nav li a:hover,
+.main-nav li a:active {
+	border-bottom: 2px solid #ed07b7;
+}
+
+.logo {
+	height: 120px;
+	width: auto;
+	float: left;
+}
+
+.laptop-image {
+	width: 80%;
+}
+
+.about-heading {
+	color: #000;
+	font-size: 250%;
+	letter-spacing: 1px;
+	font-weight: 500;
+	margin-bottom: 50px;
+}
+
+.about-para {
+	color: #555;
+	margin-bottom: 50px;
+}
+
+.about-box {
+	margin-top: 150px;
+}
+
+.about-box:first-child {
+	text-align: left;
+	padding: 0 5%;
+}
+
+.about-box:last-child {
+	text-align: right;
+}
